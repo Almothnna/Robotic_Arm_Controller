@@ -1,0 +1,125 @@
+
+:root {
+	--bg: #e3e4e8;
+	--bgT: #e3e4e800;
+	--fg: #17181c;
+	--inputBg: #fff;
+	--handleBg: #255ff4;
+	--handleDownBg: #0b46da;
+	--handleTrackBg: #5583f6;
+	font-size: calc(16px + (32 - 16)*(100vw - 320px)/(2560 - 320));
+}
+.button1 {
+  background-color: #555555; 
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  }
+  .button2 {
+  background-color: #555555; 
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 62%;
+  	width: 70%;
+
+  
+  }
+body, input {
+	color: var(--fg);
+	font: 1em/1.5 "Hind", sans-serif;
+}
+body, .range, .range__counter {
+	display: flex;
+	background-image: url(proj4.jpg);
+	background-repeat: no-repeat;
+
+}
+body {
+	background-color: var(--bg);
+	height: 100vh;
+}
+form, input, .range__input, .range__counter-sr {
+	width: 70%;
+}
+form {
+	color: black;
+	margin: center;
+	padding: 0 0.75em;
+	max-width: 20em;
+}
+
+.form2 {
+	margin-top: 28em;
+	padding: 0 0.75em;
+	max-width: 10em;
+	color: black;
+
+
+}
+label {
+
+	font-weight: bold;
+	padding-right: 11em;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #2e3138;
+		--bgT: #2e313800;
+		--fg: #e3e4e8;
+		--inputBg: #17181c;
+	}
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: skyblue; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #f44336; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="2.css">
+
+  <meta charset="utf-8">
+  <title>
+    Arm Controller
+  </title>
+</head>
+<style>
+input:hover {
+  background-color: black;
+}
+</style>
+
+<body>
+
+
+  <form method="POST" action="connection.php">
+   
+   <div class="slidecontainer">
+<p>
+    <label>1st Engine</label>
+  <input type="range" min="0" max="180" value="0" class="slider" id="myRange1" name="myRange1">
+  Value: <span id="demo"></span></p>
+  
+
+ <p>
+    <label>2nd Engine</label>
+  <input type="range" min="0" max="180" value="0" class="slider" id="myRange2" name="myRange2">
+  Value: <span id="demo2"></span></p>
+
+<p>
+  <label>3rd Engine</label>
+  <input type="range" min="0" max="180" value="0" class="slider" id="myRange3" name="myRange3">
+  Value: <span id="demo3"></span></p>
+
+
+<p>
+  <label>4th Engine</label>
+  <input type="range" min="0" max="180" value="0" class="slider" id="myRange4" name="myRange4">
+  Value: <span id="demo4"></span></p>
+  
+<p>
+  <label>5th Engine</label>
+  <input type="range" min="0" max="180" value="0" class="slider" id="myRange5" name="myRange5">
+  Value: <span id="demo5"></span></p>
+  
+
+ <p>
+  <label>6th Engine</label>
+  <input type="range" min="0" max="180" value="0" class="slider" id="myRange6" name="myRange6">
+ Value: <span id="demo6"></span></p>
+</div>
+
+
+  <input type="submit"  class= "button1" value="Save">
+  <br>
+  
+
+</form>
+
+<form class ="form2" method="POST" action="get.php">
+
+<input type="submit" class= "button2"  value="Run">
+
+</form>
+
+
+
+<script>
+var slider = document.getElementById("myRange1");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
+var slider1 = document.getElementById("myRange2");
+var output1 = document.getElementById("demo2");
+output1.innerHTML = slider1.value;
+
+slider1.oninput = function() {
+  output1.innerHTML = this.value;
+}
+
+var slider2 = document.getElementById("myRange3");
+var output2 = document.getElementById("demo3");
+output2.innerHTML = slider2.value;
+
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+
+var slider3 = document.getElementById("myRange4");
+var output3 = document.getElementById("demo4");
+output3.innerHTML = slider3.value;
+
+slider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+
+var slider4 = document.getElementById("myRange5");
+var output4 = document.getElementById("demo5");
+output4.innerHTML = slider4.value;
+
+slider4.oninput = function() {
+  output4.innerHTML = this.value;
+}
+
+var slider5 = document.getElementById("myRange6");
+var output5 = document.getElementById("demo6");
+output5.innerHTML = slider5.value;
+
+slider5.oninput = function() {
+  output5.innerHTML = this.value;
+}
+</script>
+
+
+</body>
+</html>
